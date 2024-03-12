@@ -22,9 +22,6 @@ const Statistics = (props) => {
           <StatisticLine text = 'total' value = {sum}/>
           <StatisticLine text = 'average' value = {(props.good * 1 + props.neutral * 0 + props.bad * (-1))/sum}/>
           <StatisticLine text = 'positive' value = {`${positivePercentage.toFixed(1)}%`}/>
-
-
-
         </tbody>
       </table>
 
@@ -47,9 +44,7 @@ const Button = (props) => {
     
     <button onClick={props.handleClick}>{props.text}</button>
   
-
   )
-
 
 }
 
